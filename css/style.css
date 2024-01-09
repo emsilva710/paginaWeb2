@@ -6,6 +6,7 @@
   :root{
     --titulos:36px;
     --color-main:#aad224;
+    --color-texto:#9da0a9;
   }
 
   .cabecera{
@@ -87,11 +88,32 @@
 
   .post div{
     display: flex;
+    gap: 20px;
+    color: var(--color-texto);
   }
 
   .caja-der h3, 
   .caja-izq h3{
     font-size: var(--titulos);
+    color: var(--color-main);
+  }
+
+  .caja-der h3::nth-child(3){
+    margin-top: 30px;
+  }
+
+  .caja-der a{
+    color: var(--color-texto);
+    text-decoration: none;
+  }
+  .caja-der li{
+    border-bottom: 1px solid #c3c3c3;
+    text-transform: capitalize;
+  }
+
+  .caja-der li ::before{
+    content: ">";
+    font-weight: 900;
     color: var(--color-main);
   }
   
